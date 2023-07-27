@@ -1,54 +1,81 @@
-.navbar .logo{
-    font-size: 50px;
-    font-family: "Segoe UI Semibold";
-    padding-left: 40px;
-}
-
-.navbar .container-fluid a  {
-    color: #980044;
-}
-
-.navbar .container-fluid a:hover  {
-    color: #880c3b;
-}
-
-.navbar .container-fluid .navbar-nav .nav-link{
-    color: white;
-    font-size: 25px;
-    padding-left: 40px;
-}
-
-.navbar{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #ff548a;
-}
-
-.body{
-    /*wtf*/
-    background-color: #ffb9c2;
-}
-
-.forum-header{
-    margin: 40px 40px 8px;
-
-    border-style: hidden;
-    height: 100px;
-    border-radius: 40px 40px 0 0;
-    background-color: white;
-}
-
-.forum-header p{
-    padding-top: 10px;
-    font-size: 60px;
+.main_card{
+    background-color: #e6ffdf;
     text-align: center;
-    font-family: Dubai;
+    margin: 0 auto;
+    float: none;
+
+    width: 700px;
+    border-radius: 30px;
+    border-style: solid ;
+    border-width: 0.2rem;
+    border-color: #ffffff;
+    box-shadow: 0 1px 9px #c6fff3;
+    position: relative;
+}
+.body{
+    background: url("https://i.pinimg.com/564x/91/20/7f/91207f6910f2954a96058faea84e1304.jpg");
+}
+.text{
+    padding: 10px;
     font-weight: bold;
-    color: #ff548a;
+    font-family: "Segoe UI Black";
+    color: #37a87d;
+    text-shadow: 1px 0 2px #22aacb;
+
 }
 
-.content{
-    height: 600px;
-    background-color: white;
-    margin: 0 40px 0 40px;
-    border-radius: 0 0 40px 40px;
+.text h1{
+    color: #2fbba1;
+    text-shadow: 1px 1px 4px #ffffff;
+    font-size: 60px;
 }
+
+.divider{
+    border-bottom: 8px dashed #61b98a;
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+
+}
+
+.listing{
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 60px;
+    line-height: 0.7;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.bio-text{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.links a{
+    color: #116b59;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#gummi{
+
+    width: 700px;
+    position: absolute;
+    right: 480px;
+    filter: drop-shadow(3px 3px 3px #8cff7a);
+
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100%{
+        bottom: -10px;
+
+    }
+    50%{
+        bottom: -5px;
+    }
+}
+
