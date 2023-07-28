@@ -26,8 +26,13 @@
 
 .text h1{
     color: #2fbba1;
-    text-shadow: 1px 1px 4px #ffffff;
+    text-shadow: 1px 1px 4px #74f6a2;
     font-size: 60px;
+   background-color: white;
+    margin: 0 100px 0 100px;
+    box-shadow:  0 1px 10px #4fe7c8;
+    border-radius: 10px;
+    padding: 9px;
 }
 
 .divider{
@@ -59,6 +64,10 @@
     padding: 10px;
 }
 
+.text_divider{
+    text-shadow: 0 3px 5px #116b59;
+}
+
 #gummi{
 
     width: 700px;
@@ -67,6 +76,15 @@
     filter: drop-shadow(3px 3px 3px #8cff7a);
 
     animation: MoveUpDown 1s linear infinite;
+}
+
+#apkin{
+    position: absolute;
+    width: 400px;
+    left: 610px;
+    filter: drop-shadow(3px 3px 3px #8cff7a);
+    animation: MoveUpDown 1s linear infinite;
+
 }
 
 @keyframes MoveUpDown {
