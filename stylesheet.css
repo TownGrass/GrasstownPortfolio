@@ -68,39 +68,20 @@
     text-shadow: 0 3px 5px #116b59;
 }
 
-
-.buttons{
-    background-color: #51bd7c;
-    border-radius: 8px;
+.button-comm{
+    color: white;
+    background-color: #29af96;
+    font-size: 30px;
+    border-radius: 10px;
     border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px #118383;
+    text-shadow: 2px 0 4px #4fe7c8;
 }
-
-.buttons:hover,
-.buttons:focus {
-    background-color: #6beca4;
+.button-comm:hover{
+    background-color: #34ccb0;
 }
-
 .comminfo{
     height: 700px;
 }
@@ -129,11 +110,11 @@
 
 @keyframes MoveUpDown {
     0%, 100%{
-        bottom: -10px;
+        bottom: 10%;
 
     }
     50%{
-        bottom: -5px;
+        bottom: 8%;
     }
 }
 
