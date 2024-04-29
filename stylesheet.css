@@ -1,5 +1,5 @@
 .body {
-    background-color: gray;
+    background-color: #b5c49c;
 }
 
 .card{
@@ -39,4 +39,11 @@
 
 .footer p{
     font-size: 13px;
+}
+
+#clock{
+    font-size: 15px;
+
+    text-align: center;
+    margin-top: 10px;
 }
