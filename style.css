@@ -1,17 +1,118 @@
-/* Error: expected ":".
- *   ,
- * 1 | $ma
- *   |    ^
- *   '
- *   style.scss 1:4  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 1 \2502  $ma\a   \2502     ^\a   \2575 \a   style.scss 1:4  root stylesheet';
+.body {
+  background-color: #b1bb10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.card {
+  position: relative;
+}
+
+.card-body {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  /*.line{
+    width: 50%;
+    background: linear-gradient(to right, transparent, #b1bb10, transparent);
+    height: 2px;
+    margin: 0 auto;
+    border: none;
+
+  }*/
+}
+.card-body .card-title {
+  color: #b1bb10;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 15px;
+}
+.card-body .card-desc {
+  font-size: 20px;
+  margin: 15px;
+  text-align: left;
+}
+.card-body .card-desc span {
+  font-weight: bold;
+  color: #b1bb10;
+}
+.card-body .card-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+}
+.card-body .link-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-body .link-button:hover {
+  transform: scale(1.2);
+}
+.card-body .image-button img {
+  width: 23px;
+}
+
+.card-image {
+  position: absolute;
+  top: 200px;
+  left: 1000px;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .card-image {
+    top: 100px;
+    left: 50px;
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .card-image {
+    top: 50px;
+    left: 20px;
+    width: 150px;
+  }
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+summary {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+summary:hover {
+  background-color: #ddd;
+}
+
+details[open] summary {
+  background-color: #ddd;
+}
+
+details p {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*# sourceMappingURL=style.css.map */
