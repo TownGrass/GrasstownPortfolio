@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #22577a;
+        font-family: CascadiaCodeRoman-SemiBold, 'Cascadia Code';
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 24px;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 10px;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #38a3a5;
+      }
+
+      .cls-6, .cls-5 {
+        font-family: Tahoma, Tahoma;
+      }
+
+      .cls-7 {
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(15.77 89.53)"><tspan x="0" y="0">Grasstown</tspan></text>
+  <text class="cls-5" transform="translate(133.18 71.2)"><tspan class="cls-4" x="0" y="0">* ˚</tspan><tspan class="cls-2" x="14.04" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(8.9 107.34)"><tspan class="cls-7" x="0" y="0">･ﾟ</tspan><tspan class="cls-6" x="10" y="0">:*</tspan></text>
+</svg>

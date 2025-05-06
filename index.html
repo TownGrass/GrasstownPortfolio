@@ -7,10 +7,10 @@
     <link rel="icon" href="https://i.postimg.cc/bYDXJxf2/box.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </head>
 <body class="body">
-
-<div class="card">
+<!-- <div class="card">
        <div class="card-body">
         <h5 class="card-title">Grasstown</h5>
         <div class="card-desc">
@@ -32,22 +32,72 @@
             <a href="https://trello.com/b/3kwZME0E/commissions-and-trades"><button class="link-button"><i class="fa-brands fa-trello fa-2x"></i></button></a>
         </div>
     </div>
-    <!-- <div class="accordion">
-        <details>
-            <summary>Section 1</summary>
-            <p>Content for section 1.</p>
-        </details>
-        <details>
-            <summary>Section 2</summary>
-            <p>Content for section 2.</p>
-        </details>
-        <details>
-            <summary>Section 3</summary>
-            <p>Content for section 3.</p>
-        </details>
-    </div> -->
+
 </div>
-<img src="https://i.postimg.cc/5tNbc8ZK/export202407161354225560.png" class="card-image" alt="gumi">
+
+-->
+<div class="heading">
+    <div class="logo">
+        <img id="logo" src="images/grasstown.svg" alt="logo">
+        <img onmouseover="triggerConfetti()" id="logoPfp" src="images/logograsstown_Character%20Logo.svg" alt="logopfp">
+    </div>
+     <header>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Commissions</a>
+        <a href="">TOS</a>
+    </header>
+</div>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="galery/dasdasdasd.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/hii.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/sdslo.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/sona.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/spopkylow.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/summer.png" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="galery/woie.png" alt="">
+    </div>
+</div>
 
 </body>
 </html>
+
+<script>
+    var defaults = {
+        scalar: 1.5,
+        spread: 270,
+        particleCount: 25,
+        origin: { y: 0.4 },
+        startVelocity: 35,
+    };
+
+    function triggerConfetti() {
+        confetti({
+            ...defaults,
+            shapes: ["image"],
+            shapeOptions: {
+                image: {
+                    src: "images/star-svgrepo-com.svg",
+                    replaceColor: true,
+                    width: 32,
+                    height: 40,
+                },
+            },
+            colors: ["#3ab795", "#a0e8af", "#86baa1", "#edead0", "#ffcf56", "#4e878c"],
+        });
+    }
+</script>
