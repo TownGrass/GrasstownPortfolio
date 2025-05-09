@@ -1,6 +1,6 @@
-$primary_color: #22577a;
-$secondary_color: #38a3a5;
-$tertiary_color: #57cc99;
+$primary_color: #468007;
+$secondary_color: #b1bb10;
+$tertiary_color: #ffb9c2;
 $quaternary_color: #80ed99;
 $quinary_color: #c7f9cc;
 
@@ -9,26 +9,34 @@ $quinary_color: #c7f9cc;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $quinary_color;
+  background-color: white;
   flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .heading{
     font-size: 2rem;
     color: $secondary_color;
-    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
     font-weight: 600;
     padding: 30px;
 
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+  }
+
 .logo{
   display: flex;
-  justify-content: space-between ;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
 }
-
-  #logo{
-    width: 50%;
-  }
 
   #logoPfp{
     width: 50%;
@@ -83,4 +91,30 @@ $quinary_color: #c7f9cc;
     }
 }
 
+.biography{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: row;
+    gap: 20px;
+
+
+  .bio-img{
+    width: 40%;
+  }
+
+
+  #description {
+    width: 50%;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: $secondary_color;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: bold;
+
+  }
+}
 
