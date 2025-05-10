@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-    <script src="indexScript.js"></script>
+    <script defer src="indexScript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 </head>
 <body class="body">
 
+<audio id="click-sound" src="sounds/minimal-pop-click-ui-3-198303.mp3" preload="auto"></audio>
+<audio id="hover-sound" src="sounds/party-blower-4-207163.mp3" preload="auto"></audio>
+
 <div class="heading">
     <div class="logo">
-        <img onmouseover="triggerConfetti()" id="logoPfp" src="images/portfolio.png" alt="logopfp">
+        <img onmouseover="triggerConfetti()" class="logo-pfp" id="logoPfp" src="images/portfolio.png" alt="logopfp">
     </div>
      <header>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="commissions.html">Commissions</a>
-        <a href="tos.html">TOS</a>
+        <a class="link-to-sites"  href="index.html">Home</a>
+        <a class="link-to-sites"  href="about.html">About Me</a>
+        <a class="link-to-sites"  href="commissions.html">Commissions</a>
+        <a class="link-to-sites"   href="tos.html">TOS</a>
     </header>
 </div>
 
