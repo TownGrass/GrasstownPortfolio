@@ -9,9 +9,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   <script src="indexScript.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pY1Zf0GBZs8Ck7PNQOneaYtI3LrJ8ptuV4U3+LsLwTpS3g7N6hAMEQpaoAQ+utI4P0R0Yj+ABFHGhOjBeyv2pw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
 
 </head>
-<body class="body">
+<body id="about-site" class="body">
+<button id="mute-toggle" aria-label="Toggle sound">
+    <i class="fa-solid fa-volume-high"></i>
+</button>
+
+
 <audio id="click-sound" src="sounds/minimal-pop-click-ui-3-198303.mp3" preload="auto"></audio>
 <audio id="hover-sound" src="sounds/party-blower-4-207163.mp3" preload="auto"></audio>
 
@@ -30,9 +42,9 @@
 <div class="biography">
   <img src="images/portfolio-03.png" alt="me" class="bio-img">
  <div id="description">
-   <h1>Hiii!</h1>
+     <h1 class="typing"><span id="typewriter"></span></h1>
    <p> ✧･ﾟ:  I'm Grasstown!</p>
-    <p>I'm a digital artist and a soon-to-be Web developer !</p>
+    <p>I'm a digital artist and a Web-developer !</p>
     <p>I'm a self-taught artist and I started drawing way before 2017...</p>
     <p>My main goal is to make cute and colorful art!  *✧･ﾟ:*</p>
     <p>I'm a huge fan of anime and video games, and I love to draw fanart!</p>

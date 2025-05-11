@@ -10,12 +10,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
     <script defer src="indexScript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pY1Zf0GBZs8Ck7PNQOneaYtI3LrJ8ptuV4U3+LsLwTpS3g7N6hAMEQpaoAQ+utI4P0R0Yj+ABFHGhOjBeyv2pw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
 
 </head>
 <body class="body">
 
+<button id="mute-toggle" aria-label="Toggle sound">
+    <i class="fa-solid fa-volume-high"></i>
+</button>
+
+
 <audio id="click-sound" src="sounds/minimal-pop-click-ui-3-198303.mp3" preload="auto"></audio>
 <audio id="hover-sound" src="sounds/party-blower-4-207163.mp3" preload="auto"></audio>
+<audio id="image-click-sound" src="sounds/infographic-pop-5-197872.mp3" preload="auto"></audio>
 
 <div class="heading">
     <div class="logo">
@@ -29,29 +43,52 @@
     </header>
 </div>
 
-<div class="gallery">
-    <div class="gallery-item">
-        <img src="galery/dasdasdasd.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/hii.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/sdslo.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/sona.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/spopkylow.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/summer.png" alt="">
-    </div>
-    <div class="gallery-item">
-        <img src="galery/woie.png" alt="">
+<div class="masonry">
+    <button class="thumb" data-title="Gummi on the hill" data-desc="Original character sitting on the hill">
+        <img src="galery/dasdasdasd.png" alt="Dasdasdasd">
+    </button>
+    <button class="thumb" data-title="Atlas (Owl Sona)" data-desc="Illustration of Atlas, my owl sona">
+        <img src="galery/hii.png" alt="Hii">
+    </button>
+    <button class="thumb" data-title="Under Water" data-desc="Underwater scene with Gummi sitting in a kelp forest">
+        <img src="galery/sdslo.png" alt="Sdslo">
+    </button>
+    <button class="thumb" data-title="Home Invader" data-desc="Illustration of Atlas, in her habitat">
+        <img src="galery/spopkylow.png" alt="Spopkylow">
+    </button>
+    <button class="thumb" data-title="Summer day" data-desc="Summer day scene with Gummi, Calanthe, Luna, Kari and humanoid Sona">
+        <img src="galery/summer.png" alt="Summer">
+    </button>
+    <button class="thumb" data-title="Atlas (Humanoid Owl Sona)" data-desc="Illustration of Atlas, my humanoid owl sona drawn in an Anime style">
+        <img src="galery/woie.png" alt="Woie">
+    </button>
+    <button class="thumb" data-title="Random Furry" data-desc="Random furry character, thought she is cute to include her too here">
+        <img src="galery/fdg.png" alt="Fdg">
+    </button>
+    <button class="thumb" data-title="Kari" data-desc="Illustration of Kari, a wind dragon that I own and was designed by Bunns (https://toyhou.se/Bunns)">
+        <img src="galery/kariwoo.png" alt="Kariwoo">
+    </button>
+    <button class="thumb" data-title="Calanthe as Shantae" data-desc="Had a funny Idea of drawing my character Calanthe as Shantae, so I did it!">
+        <img src="galery/shantae.png" alt="Shantae">
+    </button>
+    <button class="thumb" data-title="Magician Show gone wrong??!" data-desc="Illustration of Gummi, in her magician outfit and Calanthe, in a clown outfit">
+        <img src="galery/vol.png" alt="Vol">
+    </button>
+    <button class="thumb" data-title="Polar" data-desc="Illustration of Polar, a character I own and was designed by Ki-nona (https://toyhou.se/Ki-nona)">
+        <img src="galery/polar.png" alt="Vol">
+    </button>
+</div>
+
+
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="" class="lightbox-img">
+        <h2 class="lightbox-title"></h2>
+        <p class="lightbox-desc"></p>
     </div>
 </div>
+
 
 </body>
 </html>
